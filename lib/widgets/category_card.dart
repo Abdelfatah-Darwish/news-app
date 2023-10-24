@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CaregoryCard extends StatelessWidget {
-  const CaregoryCard({super.key});
+class CategoryCard extends StatelessWidget {
+  const CategoryCard({super.key});
 
   @override
   Widget build(BuildContext context) {
