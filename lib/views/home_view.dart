@@ -32,7 +32,16 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
-      body: const CaregoryCard(),
+      body: SizedBox(
+        height: 85,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: 30,
+          itemBuilder: (context, indexed) {
+            return const CaregoryCard();
+          },
+        ),
+      ),
     );
   }
 }
