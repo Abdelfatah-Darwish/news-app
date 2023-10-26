@@ -8,7 +8,7 @@ class NewsListView extends StatelessWidget {
   });
   final List<ArticleModel> articles = const [
     ArticleModel(
-      image: 'assets/images/02.news/01.jpg',
+      image: 'assets/images/01.cards/entertaiment.avif',
       title:
           'The Floyd-Warshall algorithm can be applied to both directed and undirected graphs. The only difference lies in how you constructthe initial graph representation to account for the undirected nature.',
       subTitle:
