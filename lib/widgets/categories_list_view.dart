@@ -8,11 +8,15 @@ class CategoriesListView extends StatelessWidget {
   });
   final List<CategoryModel> categories = const [
     CategoryModel(
-        image: 'assets/images/entertaiment.avif', categoryName: 'entertaiment'),
-    CategoryModel(image: 'assets/images/health.avif', categoryName: 'Health'),
-    CategoryModel(image: 'assets/images/science.avif', categoryName: 'science'),
+        image: 'assets/images/cards/entertaiment.avif',
+        categoryName: 'entertaiment'),
     CategoryModel(
-        image: 'assets/images/technology.jpeg', categoryName: 'technology'),
+        image: 'assets/images/cards/health.avif', categoryName: 'Health'),
+    CategoryModel(
+        image: 'assets/images/cards/science.avif', categoryName: 'science'),
+    CategoryModel(
+        image: 'assets/images/cards/technology.jpeg',
+        categoryName: 'technology'),
   ];
   @override
   Widget build(BuildContext context) {
