@@ -12,8 +12,8 @@ class NewsTile extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.asset(
-            articleModel.image,
+          child: Image.network(
+            articleModel.image!,
             fit: BoxFit.cover,
             height: 200,
             width: double.infinity,
@@ -36,7 +36,7 @@ class NewsTile extends StatelessWidget {
           height: 6,
         ),
         Text(
-          articleModel.subTitle,
+          articleModel.subTitle ?? '',
           maxLines: 2,
           style: const TextStyle(
             color: Colors.black87,
