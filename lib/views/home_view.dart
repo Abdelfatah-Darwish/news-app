@@ -1,9 +1,5 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:news_app/models/article_model.dart';
-import 'package:news_app/services/new_services.dart';
 import 'package:news_app/widgets/categories_list_view.dart';
-import 'package:news_app/widgets/news_list_view.dart';
 import 'package:news_app/widgets/news_list_view_builder.dart';
 //import 'package:gap/gap.dart';
 
@@ -50,7 +46,9 @@ class HomeView extends StatelessWidget {
                 height: 32,
               ),
             ),
-            NewsListViewBuilder(),
+            NewsListViewBuilder(
+              category: 'general',
+            ),
           ],
         ),
       ),

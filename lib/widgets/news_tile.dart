@@ -12,12 +12,19 @@ class NewsTile extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.network(
-            articleModel.image ?? '',
-            fit: BoxFit.cover,
-            height: 200,
-            width: double.infinity,
-          ),
+          child: articleModel.image != null
+              ? Image.network(
+                  articleModel.image!,
+                  fit: BoxFit.cover,
+                  height: 200,
+                  width: double.infinity,
+                )
+              : Image.asset(
+                  'assets/images/cards/health.avif',
+                  fit: BoxFit.cover,
+                  height: 200,
+                  width: double.infinity,
+                ),
         ),
         const SizedBox(
           height: 10,
@@ -48,3 +55,17 @@ class NewsTile extends StatelessWidget {
     );
   }
 }
+//  CachedNetworkImage(
+              //   imageUrl: 'https://picsum.photos/250?image=9',
+              //   progressIndicatorBuilder: (context, url, progress) {
+              //     if (articleModel.image != null) {
+              //       return Image.network(
+              //         articleModel.image!,
+              //         fit: BoxFit.cover,
+              //         height: 200,
+              //         width: double.infinity,
+              //       );
+              //     }
+              //     return Image.network('articleModel.image');
+              //   },
+              // ),

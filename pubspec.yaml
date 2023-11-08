@@ -30,6 +30,7 @@ environment:
 dependencies:
   dio: ^5.3.3
   gap: ^3.0.1
+  cached_network_image: ^3.3.0
   flutter:
     sdk: flutter
   
